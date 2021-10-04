@@ -13,6 +13,14 @@ const ACCESSORY_PRICE = 9.99;
 
 var bank_balance = 303.91;
 var amount = 0;
-// your code goes here
+
+while(amount<bank_balance){
+    if(amount< SPENDING_THRESHOLD)
+        amount = amount + PHONE_PRICE + ACCESSORY_PRICE;
+    else
+        amount = amount + PHONE_PRICE;
+    amount = amount + PHONE_PRICE * TAX_RATE;
+}
+console.log('$'+amount);
 
 // ⛑ Answer of the above will `$334.76`.
